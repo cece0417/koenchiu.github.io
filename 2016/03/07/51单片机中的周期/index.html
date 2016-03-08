@@ -5,34 +5,31 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 51单片机中的周期date: 2016-03-07 18:45:36
-tags: 单片机首先解释一下单片机中的各种周期和相关概念:  
+  <meta name="description" content="title: 51单片机中的周期date: 2016-03-07 18:45:36categories: 单片机  
+tags: [单片机]首先解释一下单片机中的各种周期和相关概念:  
 
 时钟频率: 指同步电路中时钟的基础频率，通常由晶振的频率决定；  
 时钟周期: 时钟周期也称为振荡周期，定义为时钟频率的倒数，计算机中最小，最基本的时间单位；  
-状态周期: 两个时钟周期为状态周期，状态周期 = 时钟周期 x 2；  
-机器周期:">
+状态周期: 两个时钟周期为状态周期，状态周期">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2016/03/07/51单片机中的周期/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 51单片机中的周期date: 2016-03-07 18:45:36
-tags: 单片机首先解释一下单片机中的各种周期和相关概念:  
+<meta property="og:description" content="title: 51单片机中的周期date: 2016-03-07 18:45:36categories: 单片机  
+tags: [单片机]首先解释一下单片机中的各种周期和相关概念:  
 
 时钟频率: 指同步电路中时钟的基础频率，通常由晶振的频率决定；  
 时钟周期: 时钟周期也称为振荡周期，定义为时钟频率的倒数，计算机中最小，最基本的时间单位；  
-状态周期: 两个时钟周期为状态周期，状态周期 = 时钟周期 x 2；  
-机器周期:">
-<meta property="og:updated_time" content="2016-03-07T16:01:03.370Z">
+状态周期: 两个时钟周期为状态周期，状态周期">
+<meta property="og:updated_time" content="2016-03-07T16:04:37.059Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title: 51单片机中的周期date: 2016-03-07 18:45:36
-tags: 单片机首先解释一下单片机中的各种周期和相关概念:  
+<meta name="twitter:description" content="title: 51单片机中的周期date: 2016-03-07 18:45:36categories: 单片机  
+tags: [单片机]首先解释一下单片机中的各种周期和相关概念:  
 
 时钟频率: 指同步电路中时钟的基础频率，通常由晶振的频率决定；  
 时钟周期: 时钟周期也称为振荡周期，定义为时钟频率的倒数，计算机中最小，最基本的时间单位；  
-状态周期: 两个时钟周期为状态周期，状态周期 = 时钟周期 x 2；  
-机器周期:">
+状态周期: 两个时钟周期为状态周期，状态周期">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -199,8 +196,8 @@ tags: 单片机首先解释一下单片机中的各种周期和相关概念:
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title: 51单片机中的周期<br>date: 2016-03-07 18:45:36</p>
-<h2 id="tags-单片机"><a href="#tags-单片机" class="headerlink" title="tags: 单片机"></a>tags: 单片机</h2><p>首先解释一下单片机中的各种周期和相关概念:  </p>
+        <p>title: 51单片机中的周期<br>date: 2016-03-07 18:45:36<br>categories: 单片机  </p>
+<h2 id="tags-单片机"><a href="#tags-单片机" class="headerlink" title="tags: [单片机]"></a>tags: [单片机]</h2><p>首先解释一下单片机中的各种周期和相关概念:  </p>
 <ol>
 <li>时钟频率: 指同步电路中时钟的基础频率，通常由<strong>晶振</strong>的频率决定；  </li>
 <li>时钟周期: 时钟周期也称为振荡周期，定义为时钟频率的倒数，计算机中最小，<strong>最基本</strong>的时间单位；  </li>
@@ -208,16 +205,19 @@ tags: 单片机首先解释一下单片机中的各种周期和相关概念:
 <li>机器周期: 一条指令的执行过程分为若干个阶段，每一个阶段完成一个基本操作，完成一个基本操作的时间称为机器周期。一般情况下，一个机器周期由6个状态周期组成，<strong>机器周期 = 状态周期 x 6 = 时钟周期 x 12 = 12 / 晶振频率</strong>；  </li>
 <li>总线周期: CPU通过总线访问存储器或I/O端口进行一次数据传输所用的时间，通常为4个或多个时钟周期；  </li>
 <li>指令周期: 取出并执行一条指令的时间，指令周期 = N x 机器周期，单周期指令指含有一个机器周期的指令；   <a id="more"></a>  
-这里拿的51单片机来举例说明一下，比如单片机上所使用的晶振为12MHz:    </li>
+</li>
 </ol>
+<p>这里拿的51单片机来举例说明一下，比如单片机上所使用的晶振为12MHz:    </p>
 <ul>
 <li>时钟频率 = 12 Mhz；  </li>
 <li>时钟周期 = 1/12 us；  </li>
 <li>状态周期 = 1/6 us；  </li>
-<li>机器周期 = 1 us；<br>所以51单片机的定时器工作方式0是13位定时器，总共可以计2的13次方个机器周期脉冲，即8192个机器周期，即8192us。工作方式1是16位定时器，总共可以计2的16次方个机器脉冲，即65536个机器脉冲，即65536秒。<br>关于波特率的计算，假设串口工作于模式0，其波特率的计算公式如下:  <pre><code class="mathjax">波特率={2^{SMOD}\over32}\times {fosc\over[12\times(256-TH1初值)]}
-</code></pre>
-其中假设SMOD = 1，定时器1在工作模式2下，溢出率与计数速率有关，计数速率与晶振频率有关，每一个机器周期会使定时器寄存器加1，一个机器周等于12个振荡周期，所以计数速率就是晶振频率的12分之一。使用11.0592MHz的晶振，TH1初值刚好是250，即 TH1=0xF3。  </li>
+<li>机器周期 = 1 us；  </li>
 </ul>
+<p>所以51单片机的定时器工作方式0是13位定时器，总共可以计2的13次方个机器周期脉冲，即8192个机器周期，即8192us。工作方式1是16位定时器，总共可以计2的16次方个机器脉冲，即65536个机器脉冲，即65536秒。<br>关于波特率的计算，假设串口工作于模式0，其波特率的计算公式如下:  </p>
+<pre><code class="mathjax">波特率={2^{SMOD}\over32}\times {fosc\over[12\times(256-TH1初值)]}
+</code></pre>
+<p>其中假设SMOD = 1，定时器1在工作模式2下，溢出率与计数速率有关，计数速率与晶振频率有关，每一个机器周期会使定时器寄存器加1，一个机器周等于12个振荡周期，所以计数速率就是晶振频率的12分之一。使用11.0592MHz的晶振，TH1初值刚好是250，即 TH1=0xF3。  </p>
 
       
     </div>
